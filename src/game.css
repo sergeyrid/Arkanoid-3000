@@ -1,0 +1,128 @@
+body {
+  background-color: black;
+  color: red;
+  font-family: "Press Start 2P";
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+  font-size: 20px;
+  padding: 15px 10px;
+  border: 3px solid red;
+  border-radius: 1rem;
+  transition: 30ms ease-out;
+}
+
+a:active {
+  color: rgba(255, 0, 0, 40%);
+}
+
+.indexRef {
+  position: absolute;
+  left: 70%;
+  top: 50%;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  font-family: "Press Start 2P";
+  border-color: black;
+  background-color: black;
+  outline-color: black;
+  color: red;
+}
+
+#restart {
+  position: absolute;
+  left: 70%;
+  top: 65%;
+  font-size: 20px;
+  border: 3px solid red;
+  border-radius: 1rem;
+  padding: 15px 10px;
+  transition: 30ms ease-out;
+}
+
+#restart:active {
+  color: rgba(255, 0, 0, 40%);
+}
+
+#volume {
+  display: inline-block;
+  position: absolute;
+  left: 70%;
+  top: 80%;
+  padding: 0px 35px 0px 10px;
+  margin: 0;
+  content: 0;
+  border: 3px solid red;
+  border-radius: 1rem;
+}
+
+#up {
+  position: absolute;
+  top: 10px;
+  left: 190px;
+  transition: 30ms ease-out;
+}
+
+#up:active {
+  color: rgba(255, 0, 0, 40%);
+}
+
+#down {
+  position: absolute;
+  top: 28px;
+  left: 190px;
+  transition: 30ms ease-out;
+}
+
+#down:active {
+  color: rgba(255, 0, 0, 40%);
+}
+
+#gameScreen {
+  border: 1px solid red;
+  border-radius: 1rem;
+}
+
+#paddleImg {
+  display: none;
+}
+
+#ballImg {
+  display: none;
+}
+
+#score {
+  position: absolute;
+  left: 70%;
+  top: 10%;
+}
+
+#highScore {
+  position: absolute;
+  left: 70%;
+  top: 20%;
+}
+
+#level {
+  position: absolute;
+  left: 70%;
+  top: 30%;
+}
+
+#brickImg3 {
+  display: none;
+}
+
+#brickImg2 {
+  display: none;
+}
+
+#brickImg1 {
+  display: none;
+}

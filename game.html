@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Arkanoid-3000</title>
+
+    <link href="./src/game.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>ARKANOID-3000</h1>
+    <h3 id="score">SCORE: <output id="scoreValue">0</output></h3>
+    <h3 id="highScore">HIGHSCORE: <output id="highScoreValue">0</output></h3>
+    <h3 id="level">LEVEL: <output id="levelNum">0</output></h3>
+    <a href="index.html" class="indexRef">INFO</a>
+    <button id="restart">RESTART</button>
+    <div id="volume">
+      <h3>VOLUME:<span id="volumeValue">50</span><button id="up">▲</button>
+      <button id="down">▼</button></h3>
+    </div>
+    <img id="paddleImg" src="./imgs/Paddle.png" />
+    <img id="ballImg" src="./imgs/Ball.png" />
+    <img id="brickImg3" src="./imgs/Brick3.png" />
+    <img id="brickImg2" src="./imgs/Brick2.png" />
+    <img id="brickImg1" src="./imgs/Brick1.png" />
+    <canvas id="gameScreen" width="800" height="500"></canvas>
+
+    <script type="module" src="./src/index.js" defer></script>
+  </body>
+</html>
