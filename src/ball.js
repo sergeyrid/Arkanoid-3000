@@ -6,19 +6,19 @@ export default class Ball {
     this.gameHeight = game.gameHeight;
     this.game = game;
 
-    this.size = 30;
+    this.size = this.gameHeight * 0.06;
 
     this.position = {
       x: Math.random() * (this.gameWidth - this.size),
-      y: this.gameHeight - 100
+      y: this.gameHeight * 0.8
     };
 
     this.speed = {
-      x: 0.3,
-      y: -0.2
+      x: this.gameWidth * 0.000375,
+      y: -this.gameHeight * 0.0004
     };
 
-    this.delta = 10;
+    this.delta = this.gameHeight * 0.02;
   }
 
   hitSound() {

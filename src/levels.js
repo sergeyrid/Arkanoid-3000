@@ -9,7 +9,7 @@ export let newLevel = function(game, level) {
   for (let i = 0; i < 7; i++) {
     for (let j = 0; j < 7; j++) {
       game.bricks.push(
-        new Brick(this, { x: i * 110 + 15, y: j * 50 + 10 }, level[j][i])
+        new Brick(game, { x: i * game.gameWidth / 7.27 + 15, y: j * game.gameHeight / 10 + 10 }, level[j][i])
       );
     }
   }

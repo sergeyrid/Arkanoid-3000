@@ -68,33 +68,42 @@ export default class Game {
 
   draw(ctx) {
     this.objects.forEach(object => object.draw(ctx));
+    const textSize = this.gameWidth / 400;
     if (this.curState == this.gameStates.PAUSE) {
       ctx.fillStyle = "rgba(0, 0, 0, 0.8)";
       ctx.fillRect(0, 0, this.gameWidth, this.gameHeight);
       ctx.fillStyle = "red";
-      ctx.font = "bold 2rem 'Press Start 2P'";
-      ctx.fillText("PAUSE", this.gameWidth / 2 - 80, this.gameHeight / 2);
+      ctx.font = `bold ${textSize}rem 'Press Start 2P'`;
+      ctx.fillText(
+        "PAUSE",
+        this.gameWidth / 2 - this.gameWidth * 0.1,
+        this.gameHeight / 2
+      );
     } else if (this.curState == this.gameStates.MENU) {
       ctx.fillStyle = "rgba(0, 0, 0, 0.8)";
       ctx.fillRect(0, 0, this.gameWidth, this.gameHeight);
       ctx.fillStyle = "red";
-      ctx.font = "bold 2rem 'Press Start 2P'";
+      ctx.font = `bold ${textSize}rem 'Press Start 2P'`;
       ctx.fillText(
         "PRESS SPACEBAR TO START",
-        this.gameWidth / 2 - 370,
+        this.gameWidth / 2 - this.gameWidth * 0.4625,
         this.gameHeight / 2
       );
     } else if (this.curState == this.gameStates.DEATH) {
       ctx.fillStyle = "rgba(0, 0, 0, 0.8)";
       ctx.fillRect(0, 0, this.gameWidth, this.gameHeight);
       ctx.fillStyle = "red";
-      ctx.font = "bold 2rem 'Press Start 2P'";
-      ctx.fillText("DEAD", this.gameWidth / 2 - 65, this.gameHeight / 2);
-      ctx.font = "1rem 'Press Start 2P'";
+      ctx.font = `bold ${textSize}rem 'Press Start 2P'`;
+      ctx.fillText(
+        "DEAD",
+        this.gameWidth / 2 - this.gameWidth * 0.08125,
+        this.gameHeight / 2
+      );
+      ctx.font = `${textSize / 2}rem 'Press Start 2P'`;
       ctx.fillText(
         "PRESS ANY KEY TO CONTINUE",
-        this.gameWidth / 2 - 200,
-        this.gameHeight / 2 + 25
+        this.gameWidth / 4,
+        this.gameHeight / 2 + this.gameHeight * 0.05
       );
     }
   }

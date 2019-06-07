@@ -1,26 +1,159 @@
+@keyframes change {
+  0%,
+  11%,
+  22%,
+  33% {
+    left: 100%;
+    top: 45%;
+    transform: translate(-50%, 0);
+    height: 0;
+    width: auto;
+  }
+  44%,
+  55%,
+  66% {
+    left: 50%;
+    top: 2.5%;
+    transform: translate(-50%, 0);
+    height: 85%;
+    width: auto;
+  }
+  77%,
+  88%,
+  100% {
+    left: 0;
+    top: 45%;
+    transform: translate(50%, 0);
+    height: 0;
+    width: auto;
+  }
+}
+
+body {
+  font-family: "Montserrat Alternates";
+  font-size: 120%;
+}
+
 a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+a:active {
+  opacity: 0.6;
 }
 
 header {
-    display: inline-block;
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    background-color: white;
-  }
-
-p {
-    font-family: "Montserrat Alternates"
+  z-index: 1;
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  left: 0;
+  top: 0;
 }
 
-#game {
-    position: absolute;
-    left: 45%;
-    top: 5px;
-    color: red;
-    font-family: "Press Start 2P";
+hr {
+  background-color: black;
+  height: 0.5vh;
+  border: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.material-icons {
+  position: relative;
+  top: 4px;
+}
+
+#galleryRef {
+  position: absolute;
+  left: 25%;
+  transform: translate(-50%, 0);
+  margin: 3px 0 0 0;
+  color: black;
+  font-size: 20px;
+}
+
+#gameRef {
+  position: absolute;
+  left: 75%;
+  transform: translate(-50%, 0);
+  margin: 5px 0 0 0;
+  color: red;
+  font-family: "Press Start 2P";
+  font-size: 20px;
+}
+
+#slider {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50vw;
+}
+
+.sliderImg {
+  z-index: 0;
+  margin-top: 5px;
+  position: absolute;
+  animation: change 12s ease-in-out infinite;
+}
+
+#img2 {
+  animation-delay: -4s;
+}
+
+#img3 {
+  animation-delay: -8s;
+}
+
+@media (min-width: 768px) {
+  #gameRef {
+    font-size: 25px;
+  }
+
+  #galleryRef {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    position: fixed;
+    background-color: black;
+    height: 40px;
+  }
+
+  #gameRef {
+    font-size: 30px;
+  }
+
+  #galleryRef {
+    color: white;
+    font-size: 30px;
+  }
+
+  #headerLine {
+    display: none;
+  }
+}
+
+@media (min-width: 1366px) {
+  header {
+    height: 50px;
+  }
+
+  #galleryRef {
+    font-size: 40px;
+  }
+
+  #gameRef {
+    font-size: 40px;
+  }
 }

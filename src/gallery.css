@@ -1,0 +1,162 @@
+body {
+  font-family: "Montserrat Alternates";
+  font-size: 120%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  left: 0;
+  top: 0;
+}
+
+#infoRef {
+  position: absolute;
+  left: 25%;
+  transform: translate(-50%, 0);
+  margin: 3px 0 0 0;
+  color: black;
+  font-size: 20px;
+}
+
+#infoRef:active {
+  opacity: 0.6;
+}
+
+#infoRef:hover {
+  opacity: 0.6;
+}
+
+#gameRef {
+  position: absolute;
+  left: 75%;
+  transform: translate(-50%, 0);
+  margin: 5px 0 0 0;
+  color: red;
+  font-family: "Press Start 2P";
+  font-size: 20px;
+}
+
+#gameRef:active {
+  opacity: 0.6;
+}
+
+#gameRef:hover {
+  opacity: 0.6;
+}
+
+hr {
+  background-color: black;
+  height: 0.5vh;
+  border: 0;
+}
+
+img {
+  width: 100%;
+  transition: 200ms ease-in-out;
+  border-radius: 1vh;
+}
+
+.imgs {
+  position: relative;
+  display: inline-block;
+  width: 39%;
+  margin: 5%;
+}
+
+.imgs > .imgName {
+  display: none;
+}
+
+.imgs:active > a > img {
+  opacity: 0.1;
+}
+
+.imgs:active > .imgName {
+  display: inline;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+@media (min-width: 768px) {
+  .imgs:active > .imgName {
+    font-size: 40px;
+  }
+
+  .imgs:hover > .imgName {
+    font-size: 40px;
+  }
+
+  #infoRef {
+    font-size: 25px;
+  }
+
+  #gameRef {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    background-color: black;
+    height: 40px;
+  }
+
+  .imgs:hover > a > img {
+    opacity: 0.1;
+  }
+
+  .imgs:hover > .imgName {
+    display: inline;
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #infoRef {
+    font-size: 30px;
+    color: white;
+  }
+
+  #gameRef {
+    font-size: 30px;
+  }
+
+  hr {
+    display: none;
+  }
+}
+
+@media (min-width: 1366px) {
+  .imgs:hover > .imgName {
+    font-size: 60px;
+  }
+
+  header {
+    height: 50px;
+  }
+
+  #infoRef {
+    font-size: 40px;
+  }
+
+  #gameRef {
+    font-size: 40px;
+  }
+}

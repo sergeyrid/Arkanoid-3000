@@ -9,8 +9,8 @@ music.volume = 0.1;
 let canvas = document.getElementById("gameScreen");
 let ctx = canvas.getContext("2d");
 
-const GAME_WIDTH = 800;
-const GAME_HEIGHT = 500;
+const GAME_WIDTH = canvas.width;
+const GAME_HEIGHT = canvas.height;
 
 let game = new Game(GAME_WIDTH, GAME_HEIGHT, music);
 game.start();

@@ -19,12 +19,6 @@ a:active {
   color: rgba(255, 0, 0, 40%);
 }
 
-.indexRef {
-  position: absolute;
-  left: 70%;
-  top: 50%;
-}
-
 button {
   padding: 0;
   margin: 0;
@@ -35,84 +29,12 @@ button {
   color: red;
 }
 
-#restart {
-  position: absolute;
-  left: 70%;
-  top: 65%;
-  font-size: 20px;
-  border: 3px solid red;
-  border-radius: 1rem;
-  padding: 15px 10px;
-  transition: 30ms ease-out;
-}
-
-#restart:active {
-  color: rgba(255, 0, 0, 40%);
-}
-
-#volume {
-  display: inline-block;
-  position: absolute;
-  left: 70%;
-  top: 80%;
-  padding: 0px 35px 0px 10px;
-  margin: 0;
-  content: 0;
-  border: 3px solid red;
-  border-radius: 1rem;
-}
-
-#up {
-  position: absolute;
-  top: 10px;
-  left: 190px;
-  transition: 30ms ease-out;
-}
-
-#up:active {
-  color: rgba(255, 0, 0, 40%);
-}
-
-#down {
-  position: absolute;
-  top: 28px;
-  left: 190px;
-  transition: 30ms ease-out;
-}
-
-#down:active {
-  color: rgba(255, 0, 0, 40%);
-}
-
-#gameScreen {
-  border: 1px solid red;
-  border-radius: 1rem;
-}
-
 #paddleImg {
   display: none;
 }
 
 #ballImg {
   display: none;
-}
-
-#score {
-  position: absolute;
-  left: 70%;
-  top: 10%;
-}
-
-#highScore {
-  position: absolute;
-  left: 70%;
-  top: 20%;
-}
-
-#level {
-  position: absolute;
-  left: 70%;
-  top: 30%;
 }
 
 #brickImg3 {
@@ -125,4 +47,125 @@ button {
 
 #brickImg1 {
   display: none;
+}
+
+#gameScreen {
+  display: none;
+}
+
+#restart {
+  display: none;
+}
+
+#volume {
+  display: none;
+}
+
+#score {
+  display: none;
+}
+
+#highScore {
+  display: none;
+}
+
+#level {
+  display: none;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  #alert {
+    display: none;
+  }
+
+  #indexRef {
+    position: absolute;
+    left: 70%;
+    top: 50%;
+  }
+
+  #restart {
+    display: block;
+    position: absolute;
+    left: 70%;
+    top: 65%;
+    font-size: 20px;
+    border: 3px solid red;
+    border-radius: 1rem;
+    padding: 15px 10px;
+    transition: 30ms ease-out;
+  }
+
+  #restart:active {
+    color: rgba(255, 0, 0, 40%);
+  }
+
+  #volume {
+    display: block;
+    position: absolute;
+    left: 70%;
+    top: 80%;
+    padding: 0px 35px 0px 10px;
+    margin: 0;
+    content: 0;
+    border: 3px solid red;
+    border-radius: 1rem;
+  }
+
+  #up {
+    position: absolute;
+    top: 10px;
+    left: 190px;
+    transition: 30ms ease-out;
+  }
+
+  #up:active {
+    color: rgba(255, 0, 0, 40%);
+  }
+
+  #down {
+    position: absolute;
+    top: 28px;
+    left: 190px;
+    transition: 30ms ease-out;
+  }
+
+  #down:active {
+    color: rgba(255, 0, 0, 40%);
+  }
+
+  #gameScreen {
+    display: block;
+    width: 62.5vw;
+    height: 80vh;
+    border: 1px solid red;
+    border-radius: 1rem;
+  }
+
+  #score {
+    display: inline;
+    position: absolute;
+    left: 70%;
+    top: 10%;
+  }
+
+  #highScore {
+    display: inline;
+    position: absolute;
+    left: 70%;
+    top: 20%;
+  }
+
+  #level {
+    display: inline;
+    position: absolute;
+    left: 70%;
+    top: 30%;
+  }
+}
+
+@media (min-width: 1366px) {
 }
